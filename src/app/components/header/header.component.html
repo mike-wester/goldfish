@@ -1,0 +1,7 @@
+<ng-container class="header">
+  <div *ngFor="let header of curriculumVitaeService.headers | async">{{header}}</div>
+  <h1>{{curriculumVitaeService.username}}</h1>
+  <a *ngFor="let headerLink of curriculumVitaeService.headerLinks | async" href="{{headerLink.link}}">
+    <div>{{headerLink.title}}</div>
+  </a>
+</ng-container>
