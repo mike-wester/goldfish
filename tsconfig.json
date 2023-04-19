@@ -24,7 +24,8 @@
       "dom"
     ],
     "paths": {
-      "@services/*": ["app/services/*"] // here!
+      "@components/*": ["app/components/*"],
+      "@services/*": ["app/services/*"]
     }
   },
   "angularCompilerOptions": {

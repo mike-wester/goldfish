@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { CurriculumVitaeService } from '../../services/curriculum-vitae.service';
 
@@ -7,7 +7,7 @@ import { CurriculumVitaeService } from '../../services/curriculum-vitae.service'
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.less']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
   public get curriculumVitaeService(): CurriculumVitaeService {
     return this._curriculumVitaeService
@@ -16,8 +16,4 @@ export class HeaderComponent implements OnInit {
   constructor(
     private _curriculumVitaeService: CurriculumVitaeService
   ) {}
-
-  ngOnInit() {
-
-  }
 }
