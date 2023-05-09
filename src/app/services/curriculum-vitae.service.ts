@@ -55,7 +55,7 @@ export class CurriculumVitaeService {
     {
       company: "Koi Fish",
       title: "Senior Software Engineer",
-      startDate: new Date(1, 22),
+      startDate: new Date(1, 28),
       endDate: new Date(12, 22),
       summary: [
         "As a software engineer at Koi Fish, you would likely spend a significant amount of time writing code and collaborating with other engineers to develop, test, and deploy software solutions. You might also participate in code reviews, design discussions, and cross-functional meetings to ensure that your work aligns with the company's overall strategy and vision.",
@@ -73,8 +73,8 @@ export class CurriculumVitaeService {
     {
       company: "Goldfish",
       title: "Software Engineer",
-      startDate: "",
-      endDate: "",
+      startDate: new Date(2, 20),
+      endDate: new Date(12, 21),
       summary: [
         "In addition to your technical responsibilities, you would likely be encouraged to participate in various learning and development opportunities, such as training sessions, workshops, and mentorship programs. You might also have the opportunity to attend industry events, hackathons, and conferences to stay up to date on the latest trends and technologies in software engineering.",
         "Overall, your one-year job description as a GoldFish employee would likely involve a mix of technical and non-technical responsibilities, with a focus on continuous learning, collaboration, and innovation."
@@ -89,8 +89,8 @@ export class CurriculumVitaeService {
     {
       company: "Koi Fish",
       title: "Junior Software Engineer",
-      startDate: "",
-      endDate: "",
+      startDate: new Date(1, 20),
+      endDate: new Date(12, 21),
       summary: [
         "Overall, your one-year job description as a Koi Fish employee would likely involve a mix of technical and non-technical responsibilities, with a focus on continuous learning, collaboration, and innovation."
       ],
@@ -101,8 +101,8 @@ export class CurriculumVitaeService {
     {
       company: "Goldfish",
       title: "Software Engineer",
-      startDate: "",
-      endDate: "",
+      startDate: new Date(1, 20),
+      endDate: new Date(12, 21),
       summary: [
         "Overall, your one-year job description as a GoldFish employee would likely involve a mix of technical and non-technical responsibilities, with a focus on continuous learning, collaboration, and innovation."
       ],
@@ -111,8 +111,8 @@ export class CurriculumVitaeService {
     {
       company: "Koi Fish",
       title: "Intern Software Engineer",
-      startDate: "",
-      endDate: "",
+      startDate: new Date(1, 20),
+      endDate: new Date(12, 21),
       summary: [
         "Overall, your one-year job description as a Koi Fish employee would likely involve a mix of technical and non-technical responsibilities, with a focus on continuous learning, collaboration, and innovation."
       ],
@@ -125,8 +125,8 @@ export class CurriculumVitaeService {
     {
       company: "Goldfish",
       title: "Intern Software Engineer",
-      startDate: "",
-      endDate: "",
+      startDate: new Date(1, 20),
+      endDate: new Date(12, 21),
       summary: [
         "Overall, your one-year job description as a GoldFish employee would likely involve a mix of technical and non-technical responsibilities, with a focus on continuous learning, collaboration, and innovation."
       ],
