@@ -26,10 +26,10 @@ export class CurriculumVitaeService {
   ]
 
   private _headerLinks = [
-    { title: "Github", link: "https://github.com/mike-wester" },
-    { title: "Github - Resume", link: "https://github.com/mike-wester/mike-wester.github.io" },
-    { title: "Github - Angular ATM", link: "https://github.com/mike-wester/angular-atm" },
-    { title: "Github - Goldfish", link: "https://github.com/mike-wester/goldfish" },
+    { title: "Github", link: "localhsot:4200/#TEST" },
+    { title: "Github - Resume", link: "localhsot:4200" },
+    { title: "Github - Angular ATM", link: "localhsot:4200" },
+    { title: "Github - Goldfish", link: "localhsot:4200" },
   ]
 
   private _workHistory = [
