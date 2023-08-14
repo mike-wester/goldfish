@@ -31,7 +31,7 @@
             ],
             "styles": [
               "src/styles.less",
-              "node_modules/font-awesome/less/font-awessome.less"
+              "node_modules/font-awesome/less/font-awesome.less"
             ],
             "scripts": []
           },
@@ -95,7 +95,7 @@
             ],
             "styles": [
               "src/styles.less",
-              "node_modules/font-awesome/less/font-awessome.less"
+              "node_modules/font-awesome/less/font-awesome.less"
             ],
             "scripts": []
           }
