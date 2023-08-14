@@ -1,13 +1,15 @@
 <ng-container class="body">
-  <h1>{{curriculumVitaeService.aboutMe}}</h1>
-  <a *ngFor="let work of curriculumVitaeService.workHistory | async">
-    <h3>{{ work.company }}</h3>
-    <h4>{{ work.title }}</h4>
-    <div *ngFor="let summary of work?.summary">
-      {{summary}}
-    </div>
-    <li *ngFor="let accomplishment of work?.accomplishments">
-      {{accomplishment}}
-    </li>
-  </a>
+  <body>
+    <h1>{{curriculumVitaeService.aboutMe}}</h1>
+    <a *ngFor="let work of curriculumVitaeService.workHistory | async">
+      <h3>{{ work.company }}</h3>
+      <h4>{{ work.title }}</h4>
+      <div *ngFor="let summary of work?.summary">
+        {{summary}}
+      </div>
+      <li *ngFor="let accomplishment of work?.accomplishments">
+        {{accomplishment}}
+      </li>
+    </a>
+  </body>
 </ng-container>
