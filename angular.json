@@ -30,7 +30,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.less",
+              "node_modules/font-awesome/less/font-awessome.less"
             ],
             "scripts": []
           },
@@ -93,7 +94,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.less",
+              "node_modules/font-awesome/less/font-awessome.less"
             ],
             "scripts": []
           }
