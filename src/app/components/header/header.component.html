@@ -5,9 +5,15 @@
         <a href="#{{header}}">{{header}}</a>
       </li>
     </ul>
-    <h2>{{ curriculumVitaeService.username }}</h2>
-    <a *ngFor="let headerLink of curriculumVitaeService.headerLinks | async" href="{{headerLink.link}}">
-      <h2>{{ headerLink.title }}</h2>
-    </a>
+    <div class="user">
+      <h1>{{ curriculumVitaeService.username }}</h1>
+    </div>
+    <div class="links">
+      <ul *ngFor="let headerLink of curriculumVitaeService.headerLinks | async">
+        <a href="{{headerLink.link}}">
+          <h2>{{ headerLink.title }}</h2>
+        </a>
+      </ul>
+    </div>
   </header>
 </ng-container>
