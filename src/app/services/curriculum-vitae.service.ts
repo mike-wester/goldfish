@@ -33,8 +33,8 @@ export class CurriculumVitaeService {
 
   private _headers = [
     "About",
-    "Experience",
     "Education",
+    "Experience",
     "Projects",
     "Skills",
     "Contact"

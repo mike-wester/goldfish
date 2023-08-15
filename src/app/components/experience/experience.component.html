@@ -1,0 +1,13 @@
+<div id="Experience" class="section">
+  <h2>Experience</h2>
+  <div *ngFor="let work of curriculumVitaeService.workHistory | async">
+    <h4>{{ work.company }}</h4>
+    <h5>{{ work.title }}</h5>
+    <div *ngFor="let summary of work?.summary">
+      {{summary}}
+    </div>
+    <li *ngFor="let accomplishment of work?.accomplishments">
+      {{accomplishment}}
+    </li>
+  </div>
+</div>
