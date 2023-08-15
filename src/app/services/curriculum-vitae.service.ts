@@ -7,14 +7,23 @@ import { Observable, of } from 'rxjs';
 export class CurriculumVitaeService {
 
   public username = "John Doe";
-  public aboutMe = "As an AI language model, I don't have personal experiences or a physical presence, so I don't have a personal about me. However, as a software engineer, your about me could include your background in computer science, your professional experience in software development, your areas of expertise, your programming languages and tools of choice, and your passion for creating efficient, elegant, and scalable software solutions. You might also want to include any notable achievements, such as projects you've contributed to, awards you've received, or technologies you've helped to develop. Additionally, you might want to mention any personal interests or hobbies that relate to software engineering, such as open-source contributions or hackathon participation.";
+  public aboutMe = "Hello! I'm [Your Name], a passionate and dedicated software engineer with a strong foundation in creating efficient and innovative solutions. I thrive in the world of coding and problem-solving, always excited to take on new challenges and contribute to cutting-edge projects.  I hold a [Your Degree] in [Your Major] from [Your University], where I honed my technical skills and gained a solid understanding of software engineering principles. Throughout my academic journey, I actively participated in coding competitions and collaborative projects, further enhancing my ability to work in a team and deliver high-quality results.";
 
 
+  public get education(): Observable<any> { return of(this._education); }
   public get headers(): Observable<string[]> { return of(this._headers); }
   public get headerLinks(): Observable<any[]> { return of(this._headerLinks); }
+  public get projects(): Observable<any[]> { return of(this._projects); }
   public get workHistory(): Observable<any[]> { return of(this._workHistory); }
 
   constructor() { }
+
+  private _education = {
+    school: "University of Wisconsin - Milwaukee",
+    endYear: "2010",
+    startYear: "2006",
+    gap: "1.01"
+  }
 
   private _headers = [
     "About",
@@ -22,14 +31,19 @@ export class CurriculumVitaeService {
     "Education",
     "Projects",
     "Skills",
-    "Contacts"
+    "Contact"
   ]
 
   private _headerLinks = [
-    { title: "Github", link: "localhsot:4200/#TEST" },
-    { title: "Github - Resume", link: "localhsot:4200" },
-    { title: "Github - Angular ATM", link: "localhsot:4200" },
-    { title: "Github - Goldfish", link: "localhsot:4200" },
+    { title: "Project Link One", link: "localhsot:4200/#Project1" },
+    { title: "Project Link Two", link: "localhsot:4200/#Project2" },
+    { title: "Project Link Threee", link: "localhsot:4200" },
+  ]
+
+  private _projects = [
+    { title: "Link One", link: "localhsot:4200/#Link1" },
+    { title: "Link Two", link: "localhsot:4200/#Link2" },
+    { title: "Link Three", link: "localhsot:4200" },
   ]
 
   private _workHistory = [
