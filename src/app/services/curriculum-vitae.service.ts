@@ -9,14 +9,20 @@ export class CurriculumVitaeService {
   public username = "John Doe";
   public aboutMe = "Hello! I'm [Your Name], a passionate and dedicated software engineer with a strong foundation in creating efficient and innovative solutions. I thrive in the world of coding and problem-solving, always excited to take on new challenges and contribute to cutting-edge projects.  I hold a [Your Degree] in [Your Major] from [Your University], where I honed my technical skills and gained a solid understanding of software engineering principles. Throughout my academic journey, I actively participated in coding competitions and collaborative projects, further enhancing my ability to work in a team and deliver high-quality results.";
 
-
+  public get contact(): Observable<any> { return of(this._contact); }
   public get education(): Observable<any> { return of(this._education); }
   public get headers(): Observable<string[]> { return of(this._headers); }
   public get headerLinks(): Observable<any[]> { return of(this._headerLinks); }
   public get projects(): Observable<any[]> { return of(this._projects); }
+  public get skills(): Observable<any> { return of(this._skills); }
   public get workHistory(): Observable<any[]> { return of(this._workHistory); }
 
   constructor() { }
+
+  private _contact = {
+    email: "mpwester@gmail.com",
+    phone: "4142003000"
+  }
 
   private _education = {
     school: "University of Wisconsin - Milwaukee",
@@ -45,6 +51,13 @@ export class CurriculumVitaeService {
     { title: "Link Two", link: "localhsot:4200/#Link2" },
     { title: "Link Three", link: "localhsot:4200" },
   ]
+
+  private _skills = {
+    "Programming Languages": ["Angular", "Typescript", "C#", "C", "C++", "Javascript", "React", "Express", "Go", "Java"],
+    "Unit Testing Frameworks": ["Karma", "Jasmine", "Jest"],
+    "Database": ["Oracle", "SQL Server", "Gramlin", "Postgrese"],
+    "Tools": ["Yarn", "Git", "NPM"]
+  }
 
   private _workHistory = [
     {

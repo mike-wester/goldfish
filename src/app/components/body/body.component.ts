@@ -8,7 +8,6 @@ import { CurriculumVitaeService } from '../../services/curriculum-vitae.service'
   styleUrls: ['./body.component.less']
 })
 export class BodyComponent {
-
   public get curriculumVitaeService(): CurriculumVitaeService {
     return this._curriculumVitaeService
   }
